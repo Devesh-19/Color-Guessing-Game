@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Lora&family=PT+Sans&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin: 0px;
+    background-color: rgb(5, 4, 4);
+
+}
+#div1{
+    background-color: rgb(86, 131, 199);
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+h2{
+    font-size: 1.5em;
+    margin:0px;
+}
+.buttons{
+    width: 30%;
+    margin: 1.66%;
+    padding-bottom: 27%;
+    border-radius: 20px;
+    border: none;
+    float: left;
+}
+#buttonwrapper{
+    max-width: 600px;
+    margin: 10px auto;
+}
+#div2{
+    background-color: white;
+}
+
+.buttonGroup{
+    border: none;
+    background:none;
+    font-family: 'Alata', sans-serif;
+    font-size: inherit;
+    color: rgb(38, 83, 150);
+    letter-spacing: 1px;
+}
+.buttonclicked{
+    background: rgb(86, 131, 199);
+    color: white;
+}
+#newcolor:hover
+{
+    background: rgb(86, 131, 199);
+    color: white;
+}
+h1{
+    margin: 0px;
+    font-size: 3.5em;
+}
+#message{
+    display: inline-block;
+    width: 20%;
+}
+.changes1{
+    color: #9c2910;
+    font-family: 'Russo One', sans-serif;
+    text-transform: capitalize;
+}
+.none{
+    display: none;
+}
