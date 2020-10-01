@@ -23,12 +23,13 @@ for (let i = 0; i < squares.length; i++)
     squares[i].addEventListener("click", function()
     {
         //grab color of clicked squares
-        let clickedSquare = this.style.backgroundColor;
+        let clickedColor = this.style.backgroundColor;
 
         //compare color to pickedColor
-        if (clickedSquare === pickedColor)
+        if (clickedColor === pickedColor)
         {
             messageDisplay.textContent = "Correct!";
+            changeColors(clickedColor);
         }
         else
         {
@@ -36,4 +37,16 @@ for (let i = 0; i < squares.length; i++)
             messageDisplay.textContent = "Try again";
         }
     });
+}
+
+function changeColors(color)
+{
+    //loop through all squares
+    for (let i = 0; i < squares.length; i++)
+    {
+        //change each color to match given color
+        squares[i].style.backgroundColor = color;
+    }
+
+    
 }
