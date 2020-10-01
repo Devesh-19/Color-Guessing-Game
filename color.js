@@ -21,6 +21,9 @@ easy.addEventListener("click", () =>
     colors = generateRandomColors(numSquares);
     pickedColor = pickColor();
     colorDisplay.textContent = pickedColor;
+    resetButton.textContent = "New colors";
+    messageDisplay.textContent = "";
+    div1.style.backgroundColor =  "rgb(86, 131, 199)";
 
     //only 3 squares must appear
     for (let i = 0; i < squares.length; i++)
@@ -45,6 +48,9 @@ hard.addEventListener("click", () =>
     colors = generateRandomColors(numSquares);
     pickedColor = pickColor();
     colorDisplay.textContent = pickedColor;
+    resetButton.textContent = "New colors";
+    messageDisplay.textContent = "";
+    div1.style.backgroundColor =  "rgb(86, 131, 199)";
 
     //all 6 squares must appear
     for (let i = 0; i < squares.length; i++)
