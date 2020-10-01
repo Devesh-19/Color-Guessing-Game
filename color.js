@@ -4,6 +4,7 @@ let squares = document.querySelectorAll(".buttons");
 let pickedColor = pickColor();
 let colorDisplay = document.querySelector("#rgbVal");
 let messageDisplay = document.querySelector("#message");
+let div1 = document.querySelector("#div1");
 
 colorDisplay.textContent = pickedColor;
 
@@ -23,6 +24,7 @@ for (let i = 0; i < squares.length; i++)
         {
             messageDisplay.textContent = "Correct!";
             changeColors(clickedColor);
+            div1.style.backgroundColor = clickedColor;
         }
         else
         {
