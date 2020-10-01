@@ -44,12 +44,13 @@ h2{
     font-size: inherit;
     color: rgb(38, 83, 150);
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .buttonclicked{
     background: rgb(86, 131, 199);
     color: white;
 }
-#newcolor:hover
+#newColor:hover
 {
     background: rgb(86, 131, 199);
     color: white;
