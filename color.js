@@ -1,15 +1,63 @@
-let colors = generateRandomColors(6);
+let numSquares = 6;
+let colors = generateRandomColors(numSquares);
 const squares = document.querySelectorAll(".buttons");
 let pickedColor = pickColor();
 let colorDisplay = document.querySelector("#rgbVal");
 let messageDisplay = document.querySelector("#message");
 const div1 = document.querySelector("#div1");
 const resetButton = document.querySelector("#newColor");
+const easy = document.querySelector("#easy");
+const hard = document.querySelector("#hard");
+
+hard.classList.add("buttonClicked");
+
+easy.addEventListener("click", () =>
+{
+    //make the button appear selected
+    easy.classList.add("buttonClicked");
+    hard.classList.remove("buttonClicked");
+
+    numSquares = 3;
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+
+    //only 3 squares must appear
+    for (let i = 0; i < squares.length; i++)
+    {
+        if (colors[i])
+        {
+            squares[i].style.backgroundColor = colors[i];
+        }
+        else
+        {
+            squares[i].style.display = "none";
+        }
+    }
+});
+hard.addEventListener("click", () =>
+{
+    //make the button appear selected
+    hard.classList.add("buttonClicked");
+    easy.classList.remove("buttonClicked");
+
+    numSquares = 6;
+    colors = generateRandomColors(numSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+
+    //all 6 squares must appear
+    for (let i = 0; i < squares.length; i++)
+    {
+        squares[i].style.backgroundColor = colors[i];
+        squares[i].style.display = "block";
+    }
+});
 
 resetButton.addEventListener("click", () =>
 {
     //generate all new colors
-    colors = generateRandomColors(6);
+    colors = generateRandomColors(numSquares);
 
     //pick a new random color from array
     pickedColor = pickColor();
