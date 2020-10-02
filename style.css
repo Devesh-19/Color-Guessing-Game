@@ -15,6 +15,9 @@ body{
     color: white;
     padding-top: 7px;
     padding-bottom: 7px;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
 }
 
 h2{
